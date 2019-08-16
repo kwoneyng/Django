@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>lotto_result</title>
+</head>
+<body>
+  <h1>로또 결과 확인</h1>
+  <p>{{real_lotto}}</p>
+  <p>{{allotto}}</p>
+  {% if real_lotto == allotto %}
+  <p>당첨~</p>
+  {% endif %}
+  <p>응 안돼~ 돌아가 ㅎ</p>
+</body>
+</html>

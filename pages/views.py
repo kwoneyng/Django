@@ -96,6 +96,7 @@ def isitbirthday(request):
     }
     return render(request, 'isitbirthday.html', context)
 
+
 def lotto(request):
     real_lotto = [21, 25, 30, 32, 40, 42]  # 870회차 로또 번호
     lottos = []
@@ -105,3 +106,31 @@ def lotto(request):
         'lottos':lottos,
     }
     return render(request, 'lotto.html', context)
+
+
+def search(request):
+    return render(request, 'search.html')
+
+
+def result(request):
+    Category = request.GET.get('Category')
+    query = request.GET.get('query')
+    context = {
+        'query':query,
+        'Category':Category,
+    }
+    return render(request, 'result.html', context)
+
+
+def lotto_pick(request):
+    return render(request, 'lotto_pick.html')
+
+
+def lotto_result(request):
+    real_lotto = [21, 25, 30, 32, 40, 42]  # 870회차 로또 번호
+    allotto = list(map(int, request.GET.get('lot').split()))
+    context = {
+        'allotto':allotto,
+        'real_lotto':real_lotto,
+    }
+    return render(request, 'lotto_result.html', context)
