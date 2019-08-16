@@ -116,3 +116,6 @@ $ python manage.py runserver
 Ctrl + c 커맨드로 종료한다
 
 기본적으로 localhost:8000 에서 실행한다.
+
+\__init__.py : package로 인식시켜준다
+
