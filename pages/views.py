@@ -134,3 +134,23 @@ def lotto_result(request):
         'real_lotto':real_lotto,
     }
     return render(request, 'lotto_result.html', context)
+
+
+def static_example(request):
+    return render(request, 'static_example.html')
+
+
+def static_example2(request):
+    return render(request, 'static_example2.html')
+
+
+def workshop(request):
+    return render(request, 'workshop.html')
+
+
+def workshop2(request):
+    pull = request.GET.get('pull')
+    context = {
+        'pull':pull,
+    }
+    return render(request, 'workshop2.html', context)

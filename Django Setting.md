@@ -93,6 +93,14 @@ Django 를 설치한 순간부터 django-admin 이라는 command를 사용할 �
 ### Start project
 
 ```bash
+$ python manage.py startapp utilities
+```
+
+앱을 시작한다
+
+settings.py에 INSTALLED_APPS에 추가한 앱을 입력해준다.
+
+```bash
 (venv)
 $ django-admin startproject django_intro .
 ```
