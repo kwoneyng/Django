@@ -4,11 +4,11 @@ import random
 
 # Create your views here.
 def index(request):         # 첫번째 인자는 반드시 request가 온다. (사용자가 보내는 요청에 대한 정보)
-    return render(request, 'index.html')    # render의 첫번째 인자도 반드시 request
+    return render(request, 'pages/index.html')    # render의 첫번째 인자도 반드시 request
 
 
 def introduce(request):
-    return render(request, 'introduce.html')
+    return render(request, 'pages/introduce.html')
 
 
 def dinner(request, name):
@@ -18,7 +18,7 @@ def dinner(request, name):
         'pick':pick,
         'name':name,
     }
-    return render(request, 'dinner.html', context)
+    return render(request, 'pages/dinner.html', context)
 
 
 def image(request):
@@ -26,14 +26,14 @@ def image(request):
     context = {
         'img_url':image_url,
     }
-    return render(request, 'image.html', context)
+    return render(request, 'pages/image.html', context)
 
 
 def greeting(request, name):
     context = {
         'name':name,
     }
-    return render(request, 'greeting.html', context)
+    return render(request, 'pages/greeting.html', context)
 
 
 def times(request, num1, num2):
@@ -42,7 +42,7 @@ def times(request, num1, num2):
         'num2':num2,
         'result':num1*num2,
     }
-    return render(request, 'times.html', context)
+    return render(request, 'pages/times.html', context)
 
 
 def template_language(request):
@@ -58,11 +58,11 @@ def template_language(request):
         'empty_list':empty_list,
         'datetimenow': datetimenow,
     }
-    return render(request, 'template_language.html', context)
+    return render(request, 'pages/template_language.html', context)
 
 
 def info(request):
-    return render(request, 'info.html')
+    return render(request, 'pages/info.html')
 
 
 def student(request, name, age):
@@ -70,7 +70,7 @@ def student(request, name, age):
         'name':name,
         'age':age,
     }
-    return render(request, 'student.html', context)
+    return render(request, 'pages/student.html', context)
 
 
 def template_language(request):
@@ -86,7 +86,7 @@ def template_language(request):
         'empty_list': empty_list,
         'datetimenow': datetimenow,
     }
-    return render(request, 'template_language.html', context)
+    return render(request, 'pages/template_language.html', context)
 
 
 def isitbirthday(request):
@@ -94,7 +94,7 @@ def isitbirthday(request):
     context = {
         "datetimenow": datetimenow,
     }
-    return render(request, 'isitbirthday.html', context)
+    return render(request, 'pages/isitbirthday.html', context)
 
 
 def lotto(request):
@@ -105,11 +105,11 @@ def lotto(request):
         'real_lotto':real_lotto,
         'lottos':lottos,
     }
-    return render(request, 'lotto.html', context)
+    return render(request, 'pages/lotto.html', context)
 
 
 def search(request):
-    return render(request, 'search.html')
+    return render(request, 'pages/search.html')
 
 
 def result(request):
@@ -119,11 +119,11 @@ def result(request):
         'query':query,
         'Category':Category,
     }
-    return render(request, 'result.html', context)
+    return render(request, 'pages/result.html', context)
 
 
 def lotto_pick(request):
-    return render(request, 'lotto_pick.html')
+    return render(request, 'pages/lotto_pick.html')
 
 
 def lotto_result(request):
@@ -133,19 +133,19 @@ def lotto_result(request):
         'allotto':allotto,
         'real_lotto':real_lotto,
     }
-    return render(request, 'lotto_result.html', context)
+    return render(request, 'pages/lotto_result.html', context)
 
 
 def static_example(request):
-    return render(request, 'static_example.html')
+    return render(request, 'pages/static_example.html')
 
 
 def static_example2(request):
-    return render(request, 'static_example2.html')
+    return render(request, 'pages/static_example2.html')
 
 
 def workshop(request):
-    return render(request, 'workshop.html')
+    return render(request, 'pages/workshop.html')
 
 
 def workshop2(request):
@@ -153,4 +153,4 @@ def workshop2(request):
     context = {
         'pull':pull,
     }
-    return render(request, 'workshop2.html', context)
+    return render(request, 'pages/workshop2.html', context)
