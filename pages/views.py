@@ -154,3 +154,11 @@ def workshop2(request):
         'pull':pull,
     }
     return render(request, 'pages/workshop2.html', context)
+
+
+def one(request):
+    return render(request, 'pages/one.html')
+    
+
+def two(request):
+    return render(request, 'pages/two.html')

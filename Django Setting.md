@@ -127,3 +127,25 @@ Ctrl + c 커맨드로 종료한다
 
 \__init__.py : package로 인식시켜준다
 
+```bash
+$ pip install -r requirements.txt
+```
+
+# Django Intro
+
+python Version: 3.7.4
+
+개발환경 저장
+
+```bash
+$ pip freeze > requirments.txt
+```
+
+개발환경 설치
+
+```bash
+$ pip install -r requirements.txt
+```
+
+
+

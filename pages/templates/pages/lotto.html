@@ -1,12 +1,8 @@
-<!DOCTYPE html>
-<html lang="ko">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>lotto</title>
-</head>
-<body>
+{% extends 'base.html' %}
+
+{% block title %}lotto{% endblock  %}
+
+{% block content %}
   <h1>인생역전 가즈아!!!!</h1>
   <hr>
   {% for lotto in lottos %}
@@ -20,5 +16,4 @@
   <p>퇴사 가즈아!</p>
   {% endif %}
   <p>야근 가즈아!</p>
-</body>
-</html>
+{% endblock  %}

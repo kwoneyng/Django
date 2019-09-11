@@ -1,12 +1,8 @@
-<!DOCTYPE html>
-<html lang="ko">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Document</title>
-</head>
-<body>
+{% extends 'base.html' %}
+
+{% block title %}info{% endblock  %}
+
+{% block content %}
   <h1>우리반정보</h1>
   <h3>Teacher</h3>
   <ul><li>Name</li></ul>
@@ -16,5 +12,4 @@
   <li>김길동</li>
   <li>박길동</li>
   </ul>
-</body>
-</html>
+{% endblock  %}
